@@ -1,0 +1,16 @@
+# Action name (Workflow name)
+name: first Workflows
+# Define which event that this workflow will be automated
+on: workflow_dispatch   # Workflow will be executed when users manually trigger it
+# Jobs
+jobs:
+# <job_name> 
+  first-job: 
+    runs-on: ubuntu-latest   # Determine environment that this job will belong on (Github action Runner)
+    steps:
+      # One dash will be 1 Steps determine step name 
+      - name: Print Hello
+        # Runs can determine a command which will be executed in CLI
+        run: echo Hello
+      - name: Print Sayonara
+        run: echo Sayonaraaa
