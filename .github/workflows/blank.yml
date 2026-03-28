@@ -13,4 +13,7 @@ jobs:
         # Runs can determine a command which will be executed in CLI
         run: echo Hello
       - name: Print Sayonara
-        run: echo Sayonaraaa
+        # Execute multiple command in one step
+        run: | 
+          echo Sayonaraaa
+          ls -la
